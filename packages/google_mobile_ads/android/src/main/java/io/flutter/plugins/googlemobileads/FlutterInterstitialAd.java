@@ -78,6 +78,9 @@ class FlutterInterstitialAd extends FlutterAd.FlutterOverlayAd {
       return;
     }
     ad.setFullScreenContentCallback(new FlutterFullScreenContentCallback(manager, adId));
+
+    Log.d(TAG, "WoongTest : Activity: " + manager.getActivity());
+
     ad.show(manager.getActivity());
   }
 
